@@ -1,0 +1,13 @@
+<!--    Plays back raw depth image and RGB image recorded using the associated record.launch from OpenNI device (kinect).
+        The post-processing is then done to get a point-cloud.
+        -->
+
+<launch>
+  
+  <!-- Use simulated time: See http://mirror.umd.edu/roswiki/Clock.html for why -->
+  <param name="/use_sim_time" value="true"/>
+
+  <!-- Read back a bag file recorded with the associated record.launch, which will then be processed by the nodes launched by openni.launch -->
+  <!--node pkg="rosbag" type="play" name="play"
+    args="/home/jhp/ros_workspace/3D_Laser/1/*.bag"/-->
+</launch>

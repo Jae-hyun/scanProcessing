@@ -1,0 +1,23 @@
+<launch>
+  <include file="$(find scanProcessing)/launch/test.launch"/>
+  <!--node type="pcl_passThrough" pkg="beginner_tutorials" name="pcl_passThroughFilter" output="screen">
+    <remap from="points2" to="camera/depth_registered/points"/>
+    <remap from="output" to="cloudPassThroughFiltered"/>
+  </node>
+
+  <node type="pcl_voxel" pkg="beginner_tutorials" name="pcl_voxel" output="screen">
+    <remap from="camera/depth_registered/points" to="cloudPassThroughFiltered"/>
+  </node-->
+  <node type="pcl_statistical" pkg="beginner_tutorials" name="pcl_statistical" output="screen">
+    <!--remap from="camera/depth_registered/points" to="cloudVoxelFiltered"/-->
+    <remap from="camera/depth_registered/points" to="laser_points_Registered_DS"/>
+  </node>
+
+  <node type="pcl_extractIndices" pkg="beginner_tutorials" name="pcl_extractIndices" output="screen">
+    <!--remap from="points2" to="laser_points_Registered_DS"/-->
+    <remap from="points2" to="cloudStatisticalFiltered"/>
+    <remap from="output" to="extractIndices"/>
+  </node>
+ 
+  <!--node type="rviz" pkg="rviz" name="rviz" args="-d $(find beginner_tutorials)/launch/kinect.vcg"/-->
+  </launch>
