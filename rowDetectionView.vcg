@@ -1,0 +1,74 @@
+Axes.Enabled=1
+Axes.Length=1
+Axes.Radius=0.1
+Axes.Reference\ Frame=/camera
+Background\ ColorB=0
+Background\ ColorG=0
+Background\ ColorR=0
+Camera\ Config=-0.804797 1.55222 10 0.0755292 -0.0535508 0.0692063
+Camera\ Type=rviz::OrbitViewController
+Fixed\ Frame=/camera
+LaserPoints..AxisColorAutocompute\ Value\ Bounds=0
+LaserPoints..AxisColorAxis=1
+LaserPoints..AxisColorMax\ Value=1
+LaserPoints..AxisColorMin\ Value=-3
+LaserPoints..AxisColorUse\ Fixed\ Frame=0
+LaserPoints..FlatColorColorB=1
+LaserPoints..FlatColorColorG=1
+LaserPoints..FlatColorColorR=1
+LaserPoints..IntensityAutocompute\ Intensity\ Bounds=1
+LaserPoints..IntensityChannel\ Name=intensity
+LaserPoints..IntensityMax\ ColorB=1
+LaserPoints..IntensityMax\ ColorG=1
+LaserPoints..IntensityMax\ ColorR=1
+LaserPoints..IntensityMax\ Intensity=4096
+LaserPoints..IntensityMin\ ColorB=0
+LaserPoints..IntensityMin\ ColorG=0
+LaserPoints..IntensityMin\ ColorR=0
+LaserPoints..IntensityMin\ Intensity=0
+LaserPoints..IntensityUse\ full\ RGB\ spectrum=0
+LaserPoints.Alpha=1
+LaserPoints.Billboard\ Size=0.015
+LaserPoints.Color\ Transformer=AxisColor
+LaserPoints.Decay\ Time=0
+LaserPoints.Enabled=1
+LaserPoints.Position\ Transformer=XYZ
+LaserPoints.Queue\ Size=10
+LaserPoints.Selectable=1
+LaserPoints.Style=2
+LaserPoints.Topic=/laser_points_Registered_DS
+Marker.Enabled=1
+Marker.Marker\ Topic=visualization_marker
+Marker.Queue\ Size=100
+Odometry.Angle\ Tolerance=0.1
+Odometry.ColorB=0
+Odometry.ColorG=0.1
+Odometry.ColorR=1
+Odometry.Enabled=1
+Odometry.Keep=100000
+Odometry.Length=0.5
+Odometry.Position\ Tolerance=0.1
+Odometry.Topic=/accumulated/vo
+Property\ Grid\ Splitter=968,0
+Property\ Grid\ State=expanded=.Global Options,LaserPoints.Enabled,Axes.Enabled,Odometry.Enabled,Marker.Enabled;splitterratio=0.625468
+QMainWindow=000000ff00000000fd0000000300000000000001840000041afc0200000001fb000000100044006900730070006c006100790073010000001d0000041a000000ee00ffffff00000001000001310000041afc0200000003fb0000001e0054006f006f006c002000500072006f0070006500720074006900650073000000001d0000045e0000006700fffffffb0000000a00560069006500770073000000001d0000041a000000bb00fffffffb0000001200530065006c0065006300740069006f006e000000015b000003200000006700ffffff000000030000058a0000003efc0100000001fb0000000800540069006d006501000000000000058a000002bf00ffffff000004000000041a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+Target\ Frame=/camera
+Tool\ 2D\ Nav\ GoalTopic=/move_base_simple/goal
+Tool\ 2D\ Pose\ EstimateTopic=initialpose
+[Display0]
+ClassName=rviz::PointCloud2Display
+Name=LaserPoints
+[Display1]
+ClassName=rviz::AxesDisplay
+Name=Axes
+[Display2]
+ClassName=rviz::OdometryDisplay
+Name=Odometry
+[Display3]
+ClassName=rviz::MarkerDisplay
+Name=Marker
+[Window]
+Height=1176
+Width=1420
+X=501
+Y=-164

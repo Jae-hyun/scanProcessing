@@ -1,0 +1,17 @@
+<package>
+  <description brief="scanProcessing">
+
+     scanProcessing
+
+  </description>
+  <author>Jacqueline Libby</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/scanProcessing</url>
+  <depend package="roscpp"/>
+  <depend package="sensor_msgs"/>
+  <depend package="pcl_ros"/>
+  <depend package="opencv2"/>
+</package>
+
+
