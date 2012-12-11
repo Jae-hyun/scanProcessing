@@ -8,14 +8,14 @@
   <node type="pcl_voxel" pkg="beginner_tutorials" name="pcl_voxel" output="screen">
     <remap from="camera/depth_registered/points" to="cloudPassThroughFiltered"/>
   </node-->
-  <node type="pcl_statistical" pkg="beginner_tutorials" name="pcl_statistical" output="screen">
+  <!--node type="pcl_statistical" pkg="beginner_tutorials" name="pcl_statistical" output="screen"-->
     <!--remap from="camera/depth_registered/points" to="cloudVoxelFiltered"/-->
-    <remap from="camera/depth_registered/points" to="laser_points_Registered_DS"/>
-  </node>
+    <!--remap from="camera/depth_registered/points" to="laser_points_Registered_DS"/>
+  </node-->
 
   <node type="pcl_extractIndices" pkg="beginner_tutorials" name="pcl_extractIndices" output="screen">
-    <!--remap from="points2" to="laser_points_Registered_DS"/-->
-    <remap from="points2" to="cloudStatisticalFiltered"/>
+    <remap from="points2" to="laser_points_Registered_DS"/>
+    <!--remap from="points2" to="cloudStatisticalFiltered"/-->
     <remap from="output" to="extractIndices"/>
   </node>
  

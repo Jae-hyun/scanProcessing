@@ -8,6 +8,5 @@
   <param name="/use_sim_time" value="true"/>
 
   <!-- Read back a bag file recorded with the associated record.launch, which will then be processed by the nodes launched by openni.launch -->
-  <!--node pkg="rosbag" type="play" name="play"
-    args="/home/jhp/ros_workspace/3D_Laser/1/*.bag"/-->
+  <!--node pkg="rosbag" type="play" name="play" args="$(env BAG_DIR)"/-->
 </launch>
