@@ -13,7 +13,7 @@
     <!--remap from="camera/depth_registered/points" to="laser_points_Registered_DS"/>
   </node-->
 
-  <node type="pcl_extractIndices" pkg="beginner_tutorials" name="pcl_extractIndices" output="screen">
+  <node type="pcl_extractor_node" pkg="beginner_tutorials" name="pcl_extractor" output="screen">
     <remap from="points2" to="laser_points_Registered_DS"/>
     <!--remap from="points2" to="cloudStatisticalFiltered"/-->
     <remap from="output" to="extractIndices"/>

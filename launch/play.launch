@@ -8,5 +8,8 @@
   <param name="/use_sim_time" value="true"/>
 
   <!-- Read back a bag file recorded with the associated record.launch, which will then be processed by the nodes launched by openni.launch -->
-  <!--node pkg="rosbag" type="play" name="play" args="$(env BAG_DIR)"/-->
+  <node pkg="rosbag" type="play" name="play_1" args="$(env BAG_DIR)/3D_laser/1/laserPoints.bag --clock -l"/>
+  <node pkg="rosbag" type="play" name="play_2" args="$(env BAG_DIR)/3D_laser/1/encoderOdometry.bag -l"/>
+  <node pkg="rosbag" type="play" name="play_3" args="$(env BAG_DIR)/3D_laser/1/visualOdometry.bag -l"/>
+  <node pkg="rosbag" type="play" name="play_4" args="$(env BAG_DIR)/3D_laser/1/tf.bag -l"/>
 </launch>

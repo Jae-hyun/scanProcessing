@@ -6,4 +6,5 @@
   <node type="lineFitting" pkg="scanProcessing" name="line_fitting">
   </node> 
   <node type="rviz" pkg="rviz" name="rviz" args="-d $(find scanProcessing)/rowDetectionView.vcg"/>
+  <node type="reconfigure_gui" pkg="dynamic_reconfigure" name="dynamic_reconfigure" />
 </launch>
